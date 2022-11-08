@@ -1,0 +1,126 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #131313;
+}
+
+
+.banner{
+  width: 100vw;
+}
+
+p{
+  margin: 0;
+}
+
+
+
+.nav-input{
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.input-nav{
+  border: none;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.location-information{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.residents{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-card{
+  width: 80vw;
+  background-color: #3b3b3b;
+  padding: 1rem;
+  margin: 0.5rem;
+  max-width: 300px;
+  
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgb(106, 106, 106);
+}
+
+.loc-info-data{
+  color: white;
+}
+
+.img-info{
+  display: flex;
+}
+
+.character-images{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  top: 2rem;
+}
+
+.character-name{
+  text-align: left;
+  padding: 0rem 0rem 1rem;
+  margin: 0;
+}
+
+.text-card{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+.p-text{
+  font-size: 8px;
+  color: #ccc;
+}
+
+.p-description{
+  font-size: 12px;
+}
+
+
+
+
+
+.status-complete{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 45px;
+}
+
+.status-dead{
+  background-color: red;
+  color: red;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.status-alive{
+  background-color: green;
+  color: green;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.status-unknown{
+  background-color: white;
+  color: white;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
