@@ -46,9 +46,14 @@ p{
   padding: 1rem;
   margin: 0.5rem;
   max-width: 300px;
-  
   border-radius: 8px;
-  box-shadow: 3px 3px 3px rgb(106, 106, 106);
+  box-shadow: 4px 4px 5px rgb(106, 106, 106);
+}
+
+.container-card:hover{
+  box-shadow: 0px 0px 0px rgb(106, 106, 106);
+  background-color: #131313;
+  border: 0px;
 }
 
 .loc-info-data{
@@ -57,6 +62,7 @@ p{
 
 .img-info{
   display: flex;
+  position: relative;
 }
 
 .character-images{
@@ -67,9 +73,16 @@ p{
   top: 2rem;
 }
 
+.character-images:hover{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  right: 10px;
+}
+
 .character-name{
   text-align: left;
-  padding: 0rem 0rem 0rem;
   margin: 0;
   color: white;
 }
@@ -91,9 +104,20 @@ p{
   color: white;
 }
 
+.origin{
+  position: relative;
+  right: 10px;
+}
 
+.episodes{
+  position: relative;
+  right: 10px;
+}
 
-
+.status{
+  position: relative;
+  left: 16px;
+}
 
 .status-complete{
   display: flex;
@@ -101,6 +125,14 @@ p{
   align-items: center;
   justify-content: space-around;
   width: 45px;
+}
+
+.p-status-alive{
+  color: green;
+}
+
+.p-status-dead{
+  color: red;
 }
 
 .status-dead{

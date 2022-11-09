@@ -28,24 +28,38 @@ const CharacterCard = ({url}) => {
                 <div>
                     
                     <div className='text-card'>
-                        <p className='p-text'>Origin:</p>
+                        <p className='p-text origin'>Origin:</p>
                         <p className='p-description'>{origin}</p>
                     </div>
                     <div className='text-card'>
-                        <p className='p-text'>Status:</p>
-                        <div className='status-complete'>
-                            <p className='p-description'>{status}</p>
+                        <p className='p-text status'>Status:</p>
+                        <div className='status-complete status'>
 
 
-                            { status === 'Dead' && <div className='status-dead'></div>}
-                            { status === 'Alive' && <div className='status-alive'></div>}
+
+                    {
+                    status === 'Dead' 
+                    ? (
+                        <b className='p-description p-status-dead'>{status}</b>
+                    ) : status === 'Alive'
+                    ? (
+                        <b className='p-description p-status-alive'>{status}</b>
+                    ) : <b className='p-description p-status-unknown'>{status}</b>
+                    }
+
+                    {
+                    status === 'Dead' 
+                    ? (
+                        <div className='status-dead'></div>
+                    ) : <div className='status-alive'></div>
+                    }
 
 
                         </div>
                     </div>
                     <div className='text-card'>
                         <p className='p-text'>Number of episodes:</p>
-                        <p className='p-description'>{episodes}</p>
+                        <p className='p-description episodes'>{episodes}</p>
                     </div>
                 </div>
             </div>
