@@ -2,6 +2,7 @@ import { useState , useEffect } from 'react'
 import './App.css'
 import axios from 'axios'
 import CharacterCard from './components/CharacterCard'
+import banner from './assets/r&mheader.png'
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
 
       <div>
         <nav className='nav'>
-          <img src="../src/assets/r&mheader.png" alt="" className='banner'/>
+          <img src={banner} alt="" className='banner'/>
           <input type="text" value={locationId} onChange={e => setLocationId(e.target.value)} className="nav-input input-nav"/>
           <button onClick={searchLocationId} className="nav-input">
             Search
